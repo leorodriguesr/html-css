@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*
+O ID no html é representado no CSS com #;
+o class no html é representdo no CSS com .;
+*/
+body {
+    background-color: rgba(10, 136, 10, 0.637);
+    font-family: Arial, Helvetica, sans-serif; 
+}
+h1{ 
+    color: rgb(47, 241, 47);
+}
+#principal {                        /*podemos colocar h1#principal, ou apenas #principal    */
+    text-align: center;
+    background-color: hotpink;
+}
+h2 {
+    color: grey;
+}
+.basico {                       /*para representar uma class, colocamos o "." e o nome que demos.*/
+    color: burlywood;
+    font-weight: bold;
+}
+.intermediario {
+    color: chartreuse;
+}
+.avançado {
+    color: crimson ;
+}
+.destaque {
+    background-color: rgba(77, 77, 199, 0.582);
+}

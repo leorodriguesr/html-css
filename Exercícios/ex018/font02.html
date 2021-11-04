@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {                    /*Para pegar fontes externas. É só baixar a font, por na pasta e dar o comando.*/
+            font-family: 'qualquer nome';
+            src: url('fonts/Chopsic.otf') format('opentype') /*Tipos de format -> opentype quando a extensão for (otf), truetype quando a extensão for (ttf)*/
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'qualquer nome', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui. Minima suscipit, voluptate at soluta quas possimus, modi minus nostrum, cumque rem aliquid deserunt tempore? Ullam amet eveniet sequi dolorem.</p>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode usar meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p> <!--Para lincar é só envelopar com a tag a e digitar a url. O target e o rel no final é para abrir o link em uma nova aba.-->
+    <p>Você também pode acessar <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">meu Canal no Youtube</a>.</p>
+
+    <h1>Usando links Internos</h1>
+    <p>Esta é minha primeira página do site. Para acessar minha segunda página, <a href="pag002.html" rel="next">Click aqui.</a></p> <!--o rel="next" quer dizer que vai para a próxima página, não é obrigatório, mas facilia pro google.-->
+    <p>Você também pode acessar nossa <a href="notícias/pag003.html ">página de notícias.</a></p>
+
+    <h1>Links de Dowloads</h1>
+    <u>
+        <li><a href="livro/conta_Maio.xlsx" download="conta_Maio.xlsx" type="application/pdf">Baixar Conta Maio</a></li>  <!--https://www.iana.org/assignments/media-types/media-types.xhtml. Nem sempre precisa colocar o download e o type para baixar o arquivo. O type é só jogar a extensão do arquivo no site mencionado e pegar o type. --> 
+        <li><a href="livro/SuaFatura.png" download="SuaFatura.png" type="image/png">Baixar Fatura.</a></li>
+    </u>
+</body>
+</html>

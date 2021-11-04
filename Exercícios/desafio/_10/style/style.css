@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Qahiri&display=swap'); /*Peguei a font no google font. O link coloca aqui, e o nome coloquei na linha 13, declarando a variável.*/
+
+@font-face {                                                                                    /*Aqui é pra pegar a fonte baixada. Depois declarei ela em uma variável na linha 20.*/
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root {                                                                                         /*Usada para declarar uma variável no CSS. Utiliza-se "--" antes do nome da variável.*/
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: 'Andoid', cursive;
+}
+
+* {                                                                                            /*Seleção Global. Vale pra todos. No caso, todos os elementos não terão margem nem padding. Isso é importante porque os parágrafos e os "hs" possuem margin e padding que podem atrapalhar, por isso é melhor zerá-los e depois configurar individualmente.*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);                                                              /*Apertando Ctrl+space aparece a listas de cores que foram criadas na variável.*/
+    font-family: var(--font-padrao);
+}
+
+header {
+    background-color: var(--cor4);
+    text-align: center;
+    
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--font-destaque);
+}
+
+header > p {
+    color: white;
+}
+
+nav {
+    background-color: var(--cor5);
+
+}
+
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;                                                
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main > h1 {
+    color: var(--cor5);
+    font-family: var(--font-android);
+}
+
+main > h2 {
+    font: var(--font-android);
+}
+
+main > img {                                                                    /*Faz com que a imagem se adapte melhor ao tamanho da tela.*/
+    width: 100%;
+}
+
+main > img.pequena {
+    width: 50%;
+    display: block;                                                             /*Faz com que a imagem vira um bloco, podendo assim, centralizá-la.*/
+    margin: auto; 
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body {
+    background-image: linear-gradient(to right, #709E8C, #FDD1C8 );
+}
+main {
+    background-color: white;
+    border-radius: 10px; /*Deixa a borda mais arredondada.*/
+    box-shadow: 5px 5px 20px #4561568f; /*é a sombra da caixa. São 3 parámetros, o 1º é quanto a sombra anda pro lado, o 2º é quanto a sombra anda pra baixa, o 3º é quanto a sombra de espalha.*/
+    width: 600px; /*largura*/
+    padding: 10px; /*preenchimento das laterais.*/
+    margin: auto; /*Centraliza no meio da tela.*/
+}
+h1{
+    color: #996156; /*Cor da fonte;*/
+    text-align: center; /*Linha do texto, serve para alinhar o texto.*/
+    text-shadow: 1px 1px 2px #7c514875; /*Sombra do texto.*/
+}
+h2 {
+    color: #E6A497;
+}
+p {
+    text-align: justify;
+
+}
